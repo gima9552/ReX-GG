@@ -6,9 +6,9 @@ In this repo, you can find an example of the pipeline described in "ReX-GG: a LL
 ```
   .
   ├── data
-  │   ├── logs           # Destination folder for the error logs while running the pipeline.
-  │   └── queries        # Destination folder for the stored queries for all LLM communication.
-  ├── html_files         # Destination folder for the output graphs in HTML format.
+  │   ├── logs           # Destination folder for the error logs while running the pipeline [placeholder file to show empty folder].
+  │   └── queries        # Destination folder for the stored queries for all LLM communication [placeholder file to show empty folder].
+  ├── html_files         # Destination folder for the output graphs in HTML format [placeholder file to show empty folder].
   ├── .env               # Environment file with the OpenRouter API key (modify it before using the pipeline).
   ├── config.py          # Configuration information for the main file. Feel free to modify at your convenience.
   └── main.py            # Executable for the pipeline, to be run via command line.
