@@ -399,6 +399,11 @@ def single_graphmaker_html(results, query_id):
   DCG.add_edges_from([tuple(x) for x in bondinfo])
   colours = [DCG[u][v]['color'] for u,v in DCG.edges]
   graph_dict[query_id] = [tuple(x) for x in bondinfo]
+  # SINGLE TOPIC NODE 
+  degs = list(DCG.in_degree())  # nodes with degree 0
+  for i in degs:
+    if i[1] == 0:
+      nx.add_path(DCG, ['TOPIC', i[0]], weight=0.25, color="grey")
   # conversion from NetworkX graph to PyVis visualizer
   nt = Network('1080px', '1080px', notebook=True, directed=True)
   nt.from_nx(DCG)
